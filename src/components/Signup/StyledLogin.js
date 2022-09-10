@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const SignupWrapper = styled.div`
 background-color:black;
-width:40%;
+width:50%;
 display:flex;
 flex-direction:column;
 align-items:center;

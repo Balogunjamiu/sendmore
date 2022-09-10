@@ -7,8 +7,8 @@ export default function Footer() {
     <FooterWrapper>
         <FooterUl>
             <FooterList ><Link to={'/'}>Home</Link> </FooterList>
-            <FooterList> <Link to={'/'}>About</Link> </FooterList>
-            <FooterList> <Link to={'/'}>Contact Us</Link> </FooterList>
+            <FooterList> <Link to={'/about'}>About</Link> </FooterList>
+            <FooterList> <Link to={'/contact'}>Contact Us</Link> </FooterList>
             <FooterList> <Link to={'/'}>FAQ</Link> </FooterList>
         </FooterUl>
     </FooterWrapper>

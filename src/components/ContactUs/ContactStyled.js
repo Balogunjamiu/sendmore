@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const LoginWrapper = styled.div`
+export const ContactWrapper = styled.div`
 background-color:black;
 width:50%;
 display:flex;
@@ -10,5 +10,4 @@ align-items:center;
 justify-content:center;
 margin-left:2rem;
 font-weight: 500;
-
 `

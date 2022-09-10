@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const LoginWrapper = styled.div`
+export const AboutWrapper = styled.div`
 background-color:black;
 width:50%;
 display:flex;

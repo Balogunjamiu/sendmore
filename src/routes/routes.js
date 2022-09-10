@@ -2,10 +2,10 @@
  import WithLayout from '../components/LandingPage/Main';
  //import HomePage from "";
   const Home = lazy(()=> import ('../pages/Home/HomePage'));
- const Login = lazy(()=> import ('../pages/Login/index'));
- const Signup = lazy(()=> import('../pages/Signup/index'));
-
- 
+ const Login = lazy(()=> import ('../pages/Login'));
+ const Signup = lazy(()=> import('../pages/Signup'));
+const Contact = lazy(()=> import ('../pages/ContactUs'))
+ const About = lazy(()=> import('../pages/About'))
 const routes = [
     {
         path:'/',
@@ -22,6 +22,18 @@ const routes = [
     {
         path:'/signup',
         component: WithLayout(Signup),
+        protected:false,
+        exact:true 
+    },
+    {
+        path:'/contact',
+        component: WithLayout(Contact),
+        protected:false,
+        exact:true 
+    },
+    {
+        path:'/about',
+        component: WithLayout(About),
         protected:false,
         exact:true 
     }
