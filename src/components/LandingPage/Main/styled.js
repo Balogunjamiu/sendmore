@@ -1,16 +1,20 @@
 import styled from 'styled-components'
 
 export const MainWrapper = styled.div`
-width:100%;
-height:100%;
+width:100hv;
+height:100vw;
 background-color: black;
-color: white;
+align-items:center;
+
+
 `
+
+
 export const TalkWrapper = styled.div`
 width: 100%;
-diplay: flex;
 flex-direction:row;
-justify-content: space-around;
+
+
 `
 export const TextWrapper = styled.div`
 background-color:black;
@@ -22,6 +26,13 @@ justify-content:center;
 font-size:30px;
 margin-left:2rem;
 font-weight: 500;
+
+@media (max-width:768px){
+    width:90%;
+    justify-content:center;
+    margin:0px;
+}
+
 `
 export const TexAndLottieWrapper = styled.div`
 color:white;
@@ -29,4 +40,10 @@ width:100%;
 display:flex;
 justify-content:space-between;
 flex-direction:row;
+@media (max-width:768px){
+    margin-top:2rem;
+    display:flex;
+    flex-direction:column;
+}
+
 `

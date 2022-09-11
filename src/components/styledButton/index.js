@@ -1,4 +1,5 @@
 import React from 'react'
+import { Buttons } from './styled';
 
 export default function Button(props) {
 
@@ -10,11 +11,7 @@ export default function Button(props) {
 
   return (
     
-        <button style={{ 
-            margin:'.31rem',
-            border:'none',
-            display:'flex',
-            padding:".5rem",
+        <Buttons style={{ 
             backgroundColor:background,
             ...style
             }}
@@ -28,7 +25,7 @@ export default function Button(props) {
             }}>
               {text}
                 </p> 
-        </button>
+        </Buttons>
 
     
   )

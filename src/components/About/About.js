@@ -6,6 +6,15 @@ export default function About() {
     <AboutWrapper>
         <article>
             This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
+            This is a self build App, which is still under development
         </article>
     </AboutWrapper>
   )

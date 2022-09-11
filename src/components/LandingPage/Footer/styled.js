@@ -3,11 +3,19 @@ import styled from "styled-components";
 export const FooterWrapper = styled.div`
 display: flex;
 justify-content:center;
+position: absolute;
+bottom: 0px;
+width: 100%;
+
+@media (max-width:768px){
+    display:none;
+}
+
 `
 
 export const FooterUl = styled.ul`
 display: flex;
-justify-content:space-around;
+
 `
 export const FooterList = styled.li`
 display: flex;
@@ -20,4 +28,10 @@ margin-bottom:0px;
     text-decoration:none;
     color:white;
 }
+@media (max-width:768px){
+width:90%;
+ padding:.5rem;
+ margin:1.5rem;   
+}
+
 `

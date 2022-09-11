@@ -2,14 +2,18 @@ import React, { useEffect, useState } from 'react'
 import location from '../../../assets/images/location.png'
 import {
    MainWrapper,
-TalkWrapper,  TexAndLottieWrapper } from './styled';
+TalkWrapper,  TexAndLottieWrapper, Image } from './styled';
 import Header from '../Header'
 import Footer from '../Footer';
+ // import useScreenSize from '../../../hooks/useScreenSize';
 
 
 
  function Main({children}) {
   
+   //const screenSize = useScreenSize()
+  
+
 const [viewHeight, setView ] = useState('')
 useEffect(()=>{
   setView(window.innerHeight +'px')
@@ -22,6 +26,8 @@ useEffect(()=>{
             <TexAndLottieWrapper>
 
             {children}
+
+            
                 <img
                 style={{
                   display: 'block',
@@ -32,6 +38,7 @@ useEffect(()=>{
                 src={location} 
                 width={'35%'}
                 alt="location"/>
+
             </TexAndLottieWrapper>
                 
         </TalkWrapper>
