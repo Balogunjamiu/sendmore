@@ -11,10 +11,6 @@ export default function About() {
             This is a self build App, which is still under development
             This is a self build App, which is still under development
             This is a self build App, which is still under development
-            This is a self build App, which is still under development
-            This is a self build App, which is still under development
-            This is a self build App, which is still under development
-            This is a self build App, which is still under development
         </article>
     </AboutWrapper>
   )

@@ -13,6 +13,6 @@ font-weight: 500;
 word-break: break-all;
 over-flow:hidden;
 @media (max-width:768px){
-    width: 80%;   
+    width: 80%;
    }
 `

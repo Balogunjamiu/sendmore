@@ -1,12 +1,14 @@
 import { lazy } from "react"
-import WithLayout from '../components/LandingPage/Main';
-//import HomePage from "";
+import WithLayout from '../layouts/LandingPageLayout';
+import WithDashboardLayout from "../layouts/WithDashboardLayout";
+
+
  const Home = lazy(()=> import ('../pages/Home/HomePage'));
 const Login = lazy(()=> import ('../pages/Login'));
 const Signup = lazy(()=> import('../pages/Signup'));
 const Contact = lazy(()=> import ('../pages/ContactUs'))
 const About = lazy(()=> import('../pages/About'));
-
+const DashboardHome = lazy(()=> import('../pages/DashboardHome'));
 
 const routes = [
    {
@@ -38,7 +40,13 @@ const routes = [
        component: WithLayout(About),
        protected:true,
        exact:true 
-   }
+   },
+   {
+    path:'/dashboard',
+    component: WithDashboardLayout(DashboardHome),
+    protected:true,
+    exact:true 
+},
 ]
 
 export default routes
