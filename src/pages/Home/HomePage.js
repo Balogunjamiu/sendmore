@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import { TextWrapper } from './styled';
+import { LottieAnimation, TextWrapper } from './styled';
 import Button from '../../components/styledButton';
 import deliveryman from '../../assets/Lotties/animated-delivery-man.json';
 import { useNavigate } from 'react-router-dom';
@@ -21,7 +21,9 @@ export default function HomePage() {
                       marginTop:'1rem'                  
                   }}
                     />
+                    <LottieAnimation>
                 <Lottie animationData={deliveryman} loop={true} />
+                    </LottieAnimation>
               </TextWrapper>
   )
 }
