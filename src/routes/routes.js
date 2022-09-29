@@ -14,31 +14,31 @@ const routes = [
    {
        path:'/',
        component: WithLayout(Home),
-       protected:true,
+       protected:false,
        exact:true 
    },
    {
        path:'/login',
        component: WithLayout(Login),
-       protected:true,
+       protected:false,
        exact:true 
    },
    {
        path:'/signup',
        component: WithLayout(Signup),
-       protected:true,
+       protected:false,
        exact:true 
    },
    {
        path:'/contact',
        component: WithLayout(Contact),
-       protected:true,
+       protected:false,
        exact:true 
    },
    {
        path:'/about',
        component: WithLayout(About),
-       protected:true,
+       protected:false,
        exact:true 
    },
    {

@@ -5,6 +5,5 @@ export default function useScreenSize() {
     useEffect(()=>{
     setView(window.innerHeight +'px')
     },[])
-    console.log(viewHeight)
   return viewHeight
 }

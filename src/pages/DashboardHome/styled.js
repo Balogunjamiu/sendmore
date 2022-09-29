@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const DashboardHomeWrapper = styled.div`
-background-color:red;
+
 
 `

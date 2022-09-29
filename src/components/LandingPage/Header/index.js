@@ -11,11 +11,11 @@ import useScreenSize from '../../../hooks/useScreenSize';
 
 export default function Header() {
 
-const screenSize = useScreenSize()
+// const screenSize = useScreenSize()
 
-const mobileView =(()=> screenSize <= '765px')
-const mobile = mobileView()
-console.log(mobile)
+// const mobileView =(()=> screenSize <= '765px')
+// const mobile = mobileView()
+// console.log(mobile)
 const [click, setClick] = useState(false);
 const handleClick = () => setClick(!click);
   const navigate = useNavigate()
