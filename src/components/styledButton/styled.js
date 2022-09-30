@@ -3,6 +3,8 @@ import { Button_color, duration } from '../../styles/variables'
 
 export const Buttons = styled.button`
     margin:.31rem;
+    justify-content: center;
+    align-items:center;
     border:none;
     display:flex;
     padding:.5rem;

@@ -16,7 +16,7 @@ flex-direction: column;
 export const SidebarLeftContactAvatar = styled.img`
     margin: 0px !important;
 `
-export const SidebarLeftContactText = styled.p`
+export const SidebarLeftContactText = styled.div`
 font-weight: 500;
 margin-bottom: 1rem;
 `

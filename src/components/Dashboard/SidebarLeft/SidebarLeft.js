@@ -12,16 +12,18 @@ import { SidebarLeftWrapper,
   SidebarLeftIcon2Content,
   SidebarLeftIcon3,
   SidebarLeftIcon3Content
-} from './styled'
+} from './styled';
+
+import SidebarTab from './sidebarTabs/SidebarTab';
 import Avatar from '../../../assets/images/avatar.svg'
 import Star from '../../../assets/images/star.svg';
 import Bike from '../../../assets/images/bike.svg';
 import Car from '../../../assets/images/car.svg';
+import data from './domi';
+import {StarFilled} from '@ant-design/icons'
 export default function SidebarLeft() {
-
   const [click, setClicked] = useState(false);
   const [clickedItem, setClickedItem] = useState(false)
-  
   return (
     <SidebarLeftWrapper>
     <SidebarLeftContact>
@@ -37,7 +39,9 @@ export default function SidebarLeft() {
 
     <SidebarLeftMiddleWrapper>
       <SidebarLeftIcon1>
-          <SidebarLeftIcon1Content clicked={click} onClick={()=> setClicked(!click)} src={Star}  width={'50%'} />
+      
+           <SidebarLeftIcon1Content clicked={click} onClick={()=> setClicked(!click)} src={Star}  width={'50%'} /> 
+           
       </SidebarLeftIcon1>
       <SidebarLeftIcon2>
           <SidebarLeftIcon2Content clicked={clickedItem} onClick={()=> setClickedItem(!clickedItem)} src={Bike} width={'50%'} />
@@ -46,8 +50,11 @@ export default function SidebarLeft() {
           <SidebarLeftIcon3Content src={Car} width={'50%'} />
       </SidebarLeftIcon3>
     </SidebarLeftMiddleWrapper>
-    <Segment />
-
+      <Segment />
+      {
+        data.map((item)=>
+        <SidebarTab  name={item.name} image={item.imageUri}/>
+        )
+      }    
     </SidebarLeftWrapper>
-  )
-}
+  )}
